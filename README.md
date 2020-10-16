@@ -2,6 +2,21 @@
 
 [`libmagic`][lm] bindings for Elixir.
 
+
+## Examples
+
+```elixir
+ExMagic.from_buffer("foo")
+{:ok, "text/plain"}
+
+ExMagic.from_buffer!("foo")
+"text/plain"
+
+ExMagic.version()
+537
+```
+
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
@@ -10,7 +25,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
     ```elixir
     def deps do
-      [{:exmagic, "~> 0.0.3"}]
+      [{:exmagic, "~> 0.0.4"}]
     end
     ```
 
